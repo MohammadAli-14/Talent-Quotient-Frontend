@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="forest">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    
+    <!-- CSP Meta Tag - Allow Clerk to work -->
+    <meta 
+      http-equiv="Content-Security-Policy" 
+      content="
+        default-src 'self' https://talent-qutotient-backend.onrender.com https://*.vercel.app;
+        script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.clerk.com https://*.clerk.accounts.dev;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src 'self' https://fonts.gstatic.com;
+        img-src 'self' data: https:;
+        connect-src 'self' https://talent-qutotient-backend.onrender.com https://*.clerk.com https://*.clerk.accounts.dev https://*.vercel.app;
+        frame-src 'self' https://*.clerk.com https://*.clerk.accounts.dev;
+        worker-src 'self' blob:;
+      "
+    />
+    
+    <title>Talent Quotient</title>
   </head>
   <body>
     <div id="root"></div>
