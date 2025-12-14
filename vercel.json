@@ -6,6 +6,10 @@
   "framework": "vite",
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": "https://talent-qutotient-backend.onrender.com/api/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
@@ -25,15 +29,6 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
-        }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "max-age=31536000, immutable"
         }
       ]
     }
