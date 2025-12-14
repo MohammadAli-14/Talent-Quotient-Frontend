@@ -21,7 +21,6 @@ The frontend connects to the Talent Quotient Backend API to deliver a seamless i
 ## ✨ Features
 
 ### **Core Features**
-- **Interactive Monaco Editor**: Feature-rich code editor with syntax highlighting for 8+ programming languages
 - **Real-time Video Calls**: Integrated WebRTC video conferencing with screen sharing capabilities
 - **Live Code Execution**: Execute code in multiple languages directly in the browser using Piston API
 - **Real-time Collaboration**: Multiple users can edit code simultaneously with cursor visibility
